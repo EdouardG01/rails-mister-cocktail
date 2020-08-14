@@ -1,0 +1,48 @@
+.wall {
+  background-size:cover;
+}
+
+
+.show-banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+}
+
+.show-banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.show-banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.list-group {
+  margin: 30px 10px;
+  box-shadow: 0 0 15px rgba(44, 125, 203,0.2);
+  border-radius: 10px;
+}
+
+.list-group li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-group i {
+  color:#ced4da;
+
+}
+
+.list-group i:hover {
+    color:#212529;
+  }
+
+

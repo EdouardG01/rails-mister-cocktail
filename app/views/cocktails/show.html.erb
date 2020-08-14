@@ -1,0 +1,35 @@
+
+<div class="wall" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://source.unsplash.com/YNMjGIPgD_c);">
+  <div class="show-banner">
+    <h1><%= @cocktail.name %></h1>
+        | <%= link_to "Add ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-secondary rounded-pill" %> |
+  </div>
+  <div class="container">
+  <ul class="list-group list-group-flush">
+        <% @cocktail.doses.each do |dose| %>
+        <li class="list-group-item">
+          <%= dose.description %>
+          <%= dose.ingredient.name %>
+          <%= link_to dose_path(dose.id), method: :delete, data: { confirm: "Are you sure?" } do %>
+          <i class="far fa-trash-alt"></i>
+          <% end %>
+          <% end %>
+        </li>
+      </ul>
+</div>
+
+   <div class="footer">
+    <div class="footer-links">
+      <a href="https://www.instagram.com/cocktails/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/TipsyBartender"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.pinterest.fr/cuisineactuelle/cocktail/"><i class="fab fa-pinterest-p"></i></a>
+      <a href="https://www.1001cocktails.com/"><i class="fas fa-cocktail"></i></a>
+    </div>
+      <div class="footer-copyright">
+      This Cocktail page is made with <i class="fas fa-heart"></i> at Le Wagon
+    </div>
+</div>
+
+
+
+
