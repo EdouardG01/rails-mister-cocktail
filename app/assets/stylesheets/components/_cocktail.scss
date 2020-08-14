@@ -88,3 +88,24 @@
   background: black;
   opacity: 0;
 }
+
+@media(max-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card img {
+    width: 250px;
+  }
+  #map {
+    display: none;
+  }
+}
+
+@media(max-width: 680px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .card img {
+    width: 350px;
+  }
+}
