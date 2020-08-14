@@ -1,5 +1,6 @@
-<h1>Add doses for <%= @cocktail.name %></h1>
 
+
+<h1>Add doses for <%= @cocktail.name %></h1>
 <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.input :description %> <br>
   <%= f.association :ingredient %> <br>

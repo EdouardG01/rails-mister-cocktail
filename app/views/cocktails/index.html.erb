@@ -6,22 +6,19 @@
   <div class="container">
     <h1>Cocktail's World</h1>
     <p> | Enter in a world of pleasure |</p>
-    <%= link_to "Create a new Cocktail ! ", new_cocktail_path, class: "btn btn-secondary rounded-pill"%>
+    <%= link_to "Create a new Cocktail ! ", new_cocktail_path, class: "btn btn-outline-light rounded-pill"%>
   </div>
 </div>
-
 
       <div class="cards">
         <% @cocktails.each do |cocktail| %>
             <div class="card-cocktail">
               <img src="https://source.unsplash.com/collection/2469482" />
-            <div class="card-cocktail-infos">
-              <div>
-              <h2><%= cocktail.name %></h2>
-              <a><%= link_to "More..", cocktail_path(cocktail), class: "btn btn-secondary rounded-pill"%></a>
+                <div class="card-cocktail-infos">
+                  <h2><%= cocktail.name %></h2>
+                </div>
+              <%= link_to "", cocktail_path(cocktail), class: "card-link" %>
             </div>
-          </div>
-              </div>
         <% end %>
       </div>
 
